@@ -19,13 +19,15 @@ const url =deta.url
 les desc = `
 🎵 𝗤𝗨𝗘𝗘𝗡 𝗘𝗟𝗦𝗔 𝗦𝗢𝗡𝗚 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🎵
 
-title: ${deta.title}
+📜 title: ${deta.title}
 
-description: ${deta.description}
+🧑‍💻 description: ${deta.description}
 
-time: ${deta.timestamp}
-ago: ${deta.ago}
-views: ${deta.views}
+🕞 time: ${deta.timestamp}
+
+🌍 ago: ${deta.ago}
+
+🚀 views: ${deta.views}
 
 💙𝗠𝗔𝗗𝗘 𝗕𝗬 𝗤𝗨𝗘𝗘𝗡 𝗘𝗟𝗦𝗔 𝗠𝗗💙
 `
@@ -65,13 +67,15 @@ const url =deta.url
 les desc = `
 🎵 𝗤𝗨𝗘𝗘𝗡 𝗘𝗟𝗦𝗔 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🎵
 
-title: ${deta.title}
+📜 title: ${deta.title}
 
-description: ${deta.description}
+🧑‍💻 description: ${deta.description}
 
-time: ${deta.timestamp}
-ago: ${deta.ago}
-views: ${deta.views}
+🕞 time: ${deta.timestamp}
+
+🌍 ago: ${deta.ago}
+
+🚀 views: ${deta.views}
 
 💙𝗠𝗔𝗗𝗘 𝗕𝗬 𝗤𝗨𝗘𝗘𝗡 𝗘𝗟𝗦𝗔 𝗠𝗗💙
 `
