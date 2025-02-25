@@ -20,7 +20,9 @@ les desc = `
 🎵 𝗤𝗨𝗘𝗘𝗡 𝗘𝗟𝗦𝗔 𝗦𝗢𝗡𝗚 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🎵
 
 title: ${deta.title}
+
 description: ${deta.description}
+
 time: ${deta.timestamp}
 ago: ${deta.ago}
 views: ${deta.views}
