@@ -1,6 +1,6 @@
-const config = require('../config')
-const {cmd , commands} = require('../command')
-const {sleep} = require('../lib/functions')
+const config = require('../config');
+const { cmd, commands } = require('../command');
+const { sleep } = require('../lib/functions');
 
 cmd({
     pattern: "restart",
@@ -8,15 +8,27 @@ cmd({
     category: "owner",
     filename: __filename
 },
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-if (!¡Owner) return 
-const {exec} = require("child_process")
-reply("restarting...")
-await sleep(1500)
-exec("pm2 restart all")
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+async (conn, msg, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        if (!isOwner) return reply("You are not authorized to use this command.");
+        
+        const { exec } = require("child_process");
+        reply("Restarting...");
+        await sleep(1500);
+        exec("pm2 restart all", (error, stdout, stderr) => {
+            if (error) {
+                console.error(`Error: ${error.message}`);
+                return reply(`Error: ${error.message}`);
+            }
+            if (stderr) {
+                console.error(`Stderr: ${stderr}`);
+                return reply(`Stderr: ${stderr}`);
+            }
+            console.log(`Stdout: ${stdout}`);
+            reply("Bot restarted successfully.");
+        });
+    } catch (e) {
+        console.error(e);
+        reply(`Error: ${e.message}`);
+    }
+});
