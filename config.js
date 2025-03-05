@@ -7,7 +7,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     SESSION_ID: process.env.SESSION_ID || "WfglxL6Z#b0eantiFdPr2_jBeb_ju7ibjdITmwGr5WWP7vC_1LQA",
-    MONGODB: process.env.MONGODB || "",
+    MONGODB: process.env.MONGODB || "mongodb+srv://bbot92361:9alUJt0ETygG9ffi@cluster0.1hhq3qy.mongodb.net/",
     ALIVE_IMG: process.env.ALIVE_IMG || "https://github.com/queenelsamd/Queen-Elsa-help-/blob/main/Vmake1740248561141%20(1).png?raw=true",
     ALIVE_MSG: process.env.ALIVE_MSG || "👋 𝗵𝗲𝗹𝗹𝗼, 𝗶𝗺 𝗤𝘂𝗲𝗲𝗻 𝗘𝗹𝘀𝗮 𝗶𝗺 𝗮𝗹𝗶𝘃𝗲 𝗻𝗼𝘄",
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true"
